@@ -8,9 +8,9 @@ namespace ERP_API.Entities
         public int LocationId { get; set; }
 
         [Required, MaxLength(100)]
-        public string LocationName { get; set; }
+        public string? LocationName { get; set; }
 
         [Required, MaxLength(50)]
-        public string LocationType { get; set; }
+        public string? LocationType { get; set; }
     }
 }

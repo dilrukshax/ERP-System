@@ -8,18 +8,15 @@ namespace ERP_API.Entities
         public int ItemId { get; set; }
 
         [Required, MaxLength(200)]
-        public string ItemName { get; set; }
+        public string? ItemName { get; set; }
 
         [MaxLength(500)]
-        public string ItemDescription { get; set; }
-
-        [Required]
-        public decimal ItemCost { get; set; }
+        public string? ItemDescription { get; set; }
 
         [Required]
         public decimal ItemPrice { get; set; }
 
         [Required, MaxLength(50)]
-        public string StockUnit { get; set; }
+        public string? StockUnit { get; set; }
     }
 }

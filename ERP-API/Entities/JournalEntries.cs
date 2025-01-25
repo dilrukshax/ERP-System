@@ -7,8 +7,11 @@ namespace ERP_API.Entities
         [Key]
         public int JournalId { get; set; }
 
+        [Required]
+        public DateTime EntryDate { get; set; }
+
         [Required, MaxLength(500)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required]
         public int CreatedBy { get; set; }

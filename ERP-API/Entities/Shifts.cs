@@ -9,7 +9,7 @@ namespace ERP_API.Entities
         public int ShiftId { get; set; }
 
         [Required, MaxLength(100)]
-        public string ShiftName { get; set; }
+        public string? ShiftName { get; set; }
 
         [Required]
         public TimeSpan StartTime { get; set; }
@@ -18,6 +18,6 @@ namespace ERP_API.Entities
         public TimeSpan EndTime { get; set; }
 
         [MaxLength(200)]
-        public string AssignedTo { get; set; }
+        public string? AssignedTo { get; set; }
     }
 }

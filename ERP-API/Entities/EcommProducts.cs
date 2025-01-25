@@ -10,6 +10,9 @@ namespace ERP_API.Entities
         [Required]
         public int ItemId { get; set; }
 
+        [Required, MaxLength(50)]
+        public string? ProductTitle { get; set; }
+
         [Required, MaxLength(500)]
         public string? ProductDescription { get; set; }
 

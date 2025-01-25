@@ -21,7 +21,7 @@ namespace ERP_API.Entities
         public int Quantity { get; set; }
 
         [Required, MaxLength(50)]
-        public string MoveType { get; set; }
+        public string? MoveType { get; set; }
 
         [Required]
         public DateTime MovementDate { get; set; }

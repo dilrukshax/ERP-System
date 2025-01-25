@@ -8,13 +8,13 @@ namespace ERP_API.Entities
         public int AccountId { get; set; }
 
         [Required, MaxLength(50)]
-        public string AccountCode { get; set; }
+        public string? AccountCode { get; set; }
 
         [Required, MaxLength(200)]
-        public string AccountName { get; set; }
+        public string? AccountName { get; set; }
 
         [Required, MaxLength(50)]
-        public string AccountType { get; set; }
+        public string? AccountType { get; set; }
 
         public int? ParentAccountId { get; set; }
 

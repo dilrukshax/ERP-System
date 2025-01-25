@@ -9,7 +9,7 @@ namespace ERP_API.Entities
         public int ProjectId { get; set; }
 
         [Required, MaxLength(200)]
-        public string ProjectName { get; set; }
+        public string? ProjectName { get; set; }
 
         [Required]
         public DateTime StartDate { get; set; }
@@ -17,7 +17,10 @@ namespace ERP_API.Entities
         [Required]
         public DateTime EndDate { get; set; }
 
+        [Required, MaxLength(50)]
+        public string? Status { get; set; }
+
         [MaxLength(200)]
-        public string ProjectManager { get; set; }
+        public string? ProjectManager { get; set; }
     }
 }

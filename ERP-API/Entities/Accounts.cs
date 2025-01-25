@@ -10,6 +10,9 @@ namespace ERP_API.Entities
         [Required, MaxLength(200)]
         public string? AccountName { get; set; }
 
+        [Required, MaxLength(200)]
+        public string? Industry { get; set; }
+
         [Required, MaxLength(100)]
         public string? AccountOwner { get; set; }
 

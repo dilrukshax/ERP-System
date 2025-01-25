@@ -15,9 +15,16 @@ namespace ERP_API.Entities
         public int ReturnQuantity { get; set; }
 
         [MaxLength(500)]
-        public string ReturnReason { get; set; }
+        public string? ReturnReason { get; set; }
+
+        [MaxLength(500)]
+        public string? ReturnComment { get; set; }
+
+        [MaxLength(500)]
+        public string? ReturnStatus { get; set; }
 
         [Required]
         public DateTime ReturnDate { get; set; }
+
     }
 }

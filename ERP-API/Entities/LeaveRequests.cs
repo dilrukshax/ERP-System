@@ -11,6 +11,9 @@ namespace ERP_API.Entities
         [Required]
         public int EmpId { get; set; }
 
+        [Required] 
+        public string? LeaveType { get; set; }
+
         [Required]
         public DateTime StartDate { get; set; }
 
@@ -18,9 +21,9 @@ namespace ERP_API.Entities
         public DateTime EndDate { get; set; }
 
         [MaxLength(500)]
-        public string Reason { get; set; }
+        public string? Reason { get; set; }
 
         [Required, MaxLength(50)]
-        public string Status { get; set; }
+        public string? Status { get; set; }
     }
 }

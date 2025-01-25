@@ -11,7 +11,10 @@ namespace ERP_API.Entities
         public int ProjectId { get; set; }
 
         [Required, MaxLength(200)]
-        public string TaskName { get; set; }
+        public string? TaskName { get; set; }
+
+        [Required, MaxLength(500)]
+        public string? Status { get; set; }
 
         [Required]
         public int AssignedTo { get; set; }

@@ -20,6 +20,9 @@ namespace ERP_API.Entities
         [Required]
         public decimal TotalAmount { get; set; }
 
+        [Required, MaxLength(50)]
+        public string? Status { get; set; }
+
         [Required]
         public int CreatedBy { get; set; }
     }
